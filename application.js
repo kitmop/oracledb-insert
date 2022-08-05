@@ -4,7 +4,7 @@ const fs = require('fs')
 const csv = require('fast-csv')
 
 //read from csv
-var file_path = "data\\australian.csv"
+const file_path = "data\\australian.csv"
 rows = []
 fs.createReadStream(file_path)
     .pipe(csv.parse({ headers: true }))
