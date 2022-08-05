@@ -33,7 +33,7 @@ async function run() {
     for (let i = 0; i < headers.length; i++) {
       sql_create += `${headers[i]} varchar2(4000), `
     }
-    sql_create += `primary key (${headers[0]}))`
+    sql_create += `primary key (${headers[0]}))` //assuming that the first column is the primary key
     console.log(sql_create)
     
   await connection.execute(sql_create)
