@@ -1,2 +1,2 @@
 # oracledb-insert
-Insert data from CSV into a OracleDB table
+Insert data from CSV into an OracleDB table
